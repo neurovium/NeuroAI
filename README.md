@@ -19,7 +19,7 @@ Learning and Computation in Brains, Minds, and Machines
 
 ## About this repository
 
-This repository is the computational companion to *NeuroAI: Theoretical Foundations of Dynamics, Learning and Computation in Brains, Minds, and Machines* by Nima Dehghani. It contains the chapter-by-chapter code used for computational reconstructions, numerical experiments, analyses, and figures. Almost all chapters are written. It will take me some time to polish it to a clean document. But I promise to release them in a fairly fast pace.
+This repository is the computational companion to *NeuroAI: Theoretical Foundations of Dynamics, Learning and Computation in Brains, Minds, and Machines* by Nima Dehghani. It contains the chapter-by-chapter code used for computational reconstructions, numerical experiments, analyses, and figures. 
 
 The manuscript files are not hosted here. For each released chapter, the **arXiv** badge opens its abstract page and the **PDF** badge opens the chapter PDF directly.
 
@@ -31,8 +31,7 @@ The NSF AI Institute for Artificial Intelligence and Fundamental Interactions (I
 ## Chapters and code releases
 
 `☑` **released** &nbsp;&nbsp; `☐` **forthcoming**
-
-The checkbox symbols are intentionally not Markdown task-list controls, so released chapters remain fully visible rather than being crossed out. Additional chapters will be added progressively.
+Almost all chapters are written. It will take me some time to polish it to a clean document. But I promise to release them in a fairly fast pace.
 
 ### Foundations of NeuroAI
 
