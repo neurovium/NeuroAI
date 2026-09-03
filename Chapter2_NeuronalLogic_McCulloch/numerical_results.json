@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "seed": 1943,
+    "purpose": "pedagogical replication and formal demonstration",
+    "historical_data_digitized": false,
+    "formats": [
+      "pdf",
+      "png",
+      "svg"
+    ]
+  },
+  "fig01_historical_timeline": {
+    "mcculloch_events": [
+      {
+        "year": 1898,
+        "label": "born"
+      },
+      {
+        "year": 1927,
+        "label": "M.D."
+      },
+      {
+        "year": 1943,
+        "label": "logical calculus"
+      },
+      {
+        "year": 1945,
+        "label": "heterarchy"
+      },
+      {
+        "year": 1948,
+        "label": "Hixon lecture"
+      },
+      {
+        "year": 1952,
+        "label": "MIT RLE"
+      },
+      {
+        "year": 1959,
+        "label": "frog retina"
+      },
+      {
+        "year": 1965,
+        "label": "Embodiments of Mind"
+      },
+      {
+        "year": 1969,
+        "label": "dies"
+      }
+    ],
+    "pitts_events": [
+      {
+        "year": 1923,
+        "label": "born"
+      },
+      {
+        "year": 1941,
+        "label": "meets McCulloch"
+      },
+      {
+        "year": 1943,
+        "label": "logical calculus; MIT"
+      },
+      {
+        "year": 1947,
+        "label": "universals"
+      },
+      {
+        "year": 1952,
+        "label": "MIT RLE"
+      },
+      {
+        "year": 1959,
+        "label": "frog retina"
+      },
+      {
+        "year": 1969,
+        "label": "dies"
+      }
+    ],
+    "hixon_lecture_delivered": 1948,
+    "hixon_volume_published": 1951
+  },
+  "fig02_threshold_logic": {
+    "gates": [
+      {
+        "gate": "AND",
+        "truth_table": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "exact": true
+      },
+      {
+        "gate": "OR",
+        "truth_table": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "exact": true
+      },
+      {
+        "gate": "NOT A",
+        "truth_table": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "exact": true
+      },
+      {
+        "gate": "XOR",
+        "truth_table": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "exact": true
+      }
+    ],
+    "xor_single_unit_linearly_separable": false,
+    "xor_network_depth": 2
+  },
+  "fig03_feedback_heterarchy": {
+    "transition": {
+      "000": "000",
+      "001": "010",
+      "010": "100",
+      "011": "110",
+      "100": "001",
+      "101": "011",
+      "110": "100",
+      "111": "110"
+    },
+    "cycles": [
+      [
+        "000"
+      ],
+      [
+        "001",
+        "010",
+        "100"
+      ]
+    ],
+    "orbits": {
+      "000": {
+        "mu": 0,
+        "lambda": 1,
+        "path": [
+          0
+        ],
+        "cycle": [
+          0
+        ]
+      },
+      "001": {
+        "mu": 0,
+        "lambda": 3,
+        "path": [
+          1,
+          2,
+          4
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      },
+      "010": {
+        "mu": 0,
+        "lambda": 3,
+        "path": [
+          2,
+          4,
+          1
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      },
+      "011": {
+        "mu": 2,
+        "lambda": 3,
+        "path": [
+          3,
+          6,
+          4,
+          1,
+          2
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      },
+      "100": {
+        "mu": 0,
+        "lambda": 3,
+        "path": [
+          4,
+          1,
+          2
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      },
+      "101": {
+        "mu": 3,
+        "lambda": 3,
+        "path": [
+          5,
+          3,
+          6,
+          4,
+          1,
+          2
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      },
+      "110": {
+        "mu": 1,
+        "lambda": 3,
+        "path": [
+          6,
+          4,
+          1,
+          2
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      },
+      "111": {
+        "mu": 2,
+        "lambda": 3,
+        "path": [
+          7,
+          6,
+          4,
+          1,
+          2
+        ],
+        "cycle": [
+          1,
+          2,
+          4
+        ]
+      }
+    },
+    "example_initial_state": "101",
+    "example_transient_length": 3,
+    "example_cycle_length": 3,
+    "finite_state_bound": 8,
+    "preference_cycle_has_scalar_utility": false
+  },
+  "fig04_universals_invariance": {
+    "number_of_transformed_templates": 45,
+    "direct_match_mean": 0.2698856870293377,
+    "pooled_match_mean": 0.7172129515759847,
+    "pooled_match_min": 0.4897508457814891,
+    "canonicalization_initial_error": 0.56,
+    "canonicalization_final_error": 0.0038257382538185447
+  },
+  "fig05_frog_parallel_channels": {
+    "model_status": "qualitative normalized LN/LNP-style pedagogical model; not fitted to historical data",
+    "illumination_ratio": 29.49527062794672,
+    "channel_peak_times": {
+      "sustained contrast": 0.5027932960893855,
+      "net convexity": 0.5027932960893855,
+      "moving edge": 0.5027932960893855,
+      "net dimming": 0.7709497206703911
+    },
+    "dimming_selectivity_ratio": 53681809.12697452
+  },
+  "fig06_adequate_stimulus_identification": {
+    "n_samples": 120000,
+    "linear_spikes": 15502,
+    "energy_spikes": 15658,
+    "sta_filter_correlation_linear": 0.9895844928060133,
+    "sta_filter_correlation_energy": 0.06055592030789243,
+    "stc_filter_correlation_energy": 0.9894329299944589
+  },
+  "fig07_research_program": {
+    "through_line": "physical substrate -> formal dynamics -> invariant operation -> behavior"
+  }
+}
